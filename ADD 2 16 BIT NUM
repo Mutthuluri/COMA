@@ -13,5 +13,5 @@
       INR C
  LOOP:STA 4201H
       MOV A,C
-      STA 4202H
+      STA 4102H
       HLT
