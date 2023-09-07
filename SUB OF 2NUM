@@ -1,0 +1,15 @@
+////// SUBTRACTION OF 2 8 BIT NUMBERS
+      MVI C,00H
+      LDA 4001H
+      MOV B,A
+      LDA 4002H
+      SUB B
+      JNC LOOP
+      INR C
+      CMA
+      INR A
+ LOOP:STA 4010H
+      MOV A,C
+      STA 4011H
+      HLT
+      
