@@ -1,0 +1,14 @@
+//// ADDITION OF TWO NUMBERS.
+
+          MVI C 00H
+          LDA 4001H
+          MOV B,A
+          LDA 4002H
+          ADD B
+          JNC LOOP
+          INR C
+     LOOP:STA 4005H
+          MOV A,C
+          STA 4006H
+          HLT
+            
