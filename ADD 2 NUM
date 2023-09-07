@@ -1,6 +1,6 @@
 //// ADDITION OF TWO NUMBERS.
 
-          MVI C 00H
+          MVI C,00H
           LDA 4001H
           MOV B,A
           LDA 4002H
